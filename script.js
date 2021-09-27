@@ -33,22 +33,21 @@ function sleep(ms) {
 }
 
 async function img_click(id) {
+  var element = document.getElementById(id);
   if (selected.length < 2) {
+      if (selected[0] != element.id) {
 
-    var element = document.getElementById(id);
+      selected.push(element.id)
 
-    selected.push(element.id)
+      console.log(element.id)
 
-    console.log(element.id)
-
-    for (let i = 0; i < ims.length; i++) {
-      if (ims[i].includes(element.id)) {
-        element.src = img_names[i];
-        break;
+      for (let i = 0; i < ims.length; i++) {
+        if (ims[i].includes(element.id)) {
+          element.src = img_names[i];
+          break;
+        }
       }
     }
-
-    //element.src = "pic1.jpg";
   }
   if (selected.length >= 2) {
 
