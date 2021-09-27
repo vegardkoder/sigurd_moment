@@ -1,6 +1,6 @@
 let imgs = ["im1", "im2", "im3", "im4", "im6", "im7", "im8", "im9"]
 
-let img_names = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic3.webp"]
+let img_names = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic5.jpg"]
 
 let ims = []
 
